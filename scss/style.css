@@ -43,4 +43,15 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+section {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
