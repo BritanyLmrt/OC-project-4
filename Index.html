@@ -4,18 +4,40 @@
 <head>
     <meta charset="utf-8">
     <title>Page d'accueil - Ohmyfood</title>
-    <link href="scss/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7853e1d8c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="header__logo">
             <img src="assets/images/logo/ohmyfood.png" alt="Logo d'en-tête de Ohmyfood">
+        </div>
     </header>
     <main>
-        <section class="location">
-            <i></i>
-            <p>Paris, Belleville</p>
-
+        <section class="usr-loc loc">
+            <!-- user-location servira la mise en place de la localisation de l'utilisateur-->
+            <div class="loc__contnt--pos">
+                <i class="loc__icn--custm fa-sharp fa-solid fa-location-dot"></i>
+                <p class="txt-header-footer user-loc__inf">Paris, Belleville</p>
+            </div>
+        </section>
+        <section class="intro-section">
+            <div class="intro-section__hdline--pos">
+                <h1 class="txt-section-title">Réservez le menu qui
+                    vous convient</h1>
+                <p class="txt-standard">Découvrez des restaurants d’exception, sélectionnés
+                    par nos soins.</p>
+            </div>
+            <div class="intro-section__btn--pos">
+                <button class="intro-section__btn--purple" href="#restaurant">Explorer nos restaurants</button>
+            </div> <!--ce bouton doit-il être relier à la section Restaurant ?-->
+        </section>
+        <section class="fonctioning-section"> 
+            <h2 class="txt-section-title">Fonctionnement</h2>
         </section>
     </main>
 </body>

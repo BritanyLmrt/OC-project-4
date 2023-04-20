@@ -1,9 +1,24 @@
-@import 'base/reset';
-@import 'base/base';
-@import 'base/typographie';
-@import 'utils/variables';
-@import 'utils/mixins';
-@import 'layout/header';
+// Import des fichiers de variables et mixins
+@import './utils/variables';
+@import './utils/mixins';
 
+// Import des fichiers de base
+@import './base/reset';
+@import './base/base';
+@import './base/typography'; //@use ou @import (paraît que import est obsoléte)
 
+// Import des fichiers de components
+@import './components/icons';
+@import './components/cards';
+@import './components/buttons';
+
+// Import des fichiers de layout
+@import './layout/header';
+
+// Import des fichiers de pages 
+@import './pages/index';
+
+// Import des fichiers de utils
+@import './utils/variables';
+@import './utils/mixins';
 

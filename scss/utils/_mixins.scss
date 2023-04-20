@@ -1,0 +1,46 @@
+//Mixins Boutons
+@mixin btn-purple {
+  background: $purple-gradient;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border:none;
+}
+// Mixins de taille de police
+@mixin button {
+  font-size: 1rem;
+  line-height: 1.18rem;
+  font-weight: 500;
+}
+
+@mixin footer-text {
+  font-size: 1rem;
+  line-height: 1.18rem;
+  font-weight: 400;
+}
+
+@mixin paragraph-card-restaurant {
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+  color: $grey;
+}
+
+@mixin paragraph {
+  font-size: 1.12rem;
+  line-height: 1.31rem;
+  font-weight: 300;
+  color: $grey;
+}
+
+@mixin subtitle-card {
+  font-size: 1.12rem;
+  line-height: 1.31rem;
+  font-weight: 700;
+}
+
+@mixin section-title {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}

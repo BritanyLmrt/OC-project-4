@@ -1,0 +1,18 @@
+@import '../utils/mixins';
+
+body {
+  font-family: roboto,sans-serif;
+}
+
+.txt-header-footer {
+  @include button;
+  color: $grey;
+}
+
+.txt-section-title { 
+  @include section-title;
+}
+
+.txt-standard {
+  @include paragraph;
+}

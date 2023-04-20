@@ -1,0 +1,38 @@
+.loc {
+
+    display: flex;
+    background-color: #EAEAEA;
+    justify-content: center;
+    padding-top: 15.5px;
+    padding-bottom: 15.5px;
+
+
+    .loc__contnt--pos {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+    }
+}
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 27px;
+    background-color: $grey-light;
+
+    &__hdline--pos  {
+        display: flex;
+        flex-direction: column;
+        padding-top: 39.5px;
+        gap: 18px;
+    }
+
+    &__btn--pos {
+        margin-bottom: 57px;
+        text-align: center;
+    }
+}
+
+.fonctioning-section {
+    background-color: white;
+}

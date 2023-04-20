@@ -1,47 +1,41 @@
-
-*, *:before, *:after{
+/* Box sizing rules */
+html {
     box-sizing: border-box;
-}
-
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default margin */
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
+  }
+  
+  /* Remove default padding */
+  ul, ol {
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    text-size-adjust: none;
-}
-
-footer, header, nav, section, main{
-    display: block;
-}
-
-body{
-    line-height: 1;
-}
-
-ol, ul{
+  }
+  
+  /* Remove list styles */
+  ul, ol {
     list-style: none;
-}
-
-blockquote, q{
-    quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after{
-    content: '';
-    content: none;
-}
-
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-input{
-    -webkit-appearance: none;
-    border-radius: 0;
-}
+  }
+  
+  /* Set default font size and line height */
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Set default font family */
+  body {
+    font-family: sans-serif;
+  }
+  
+  /* Remove the focus outline */
+  a:focus,
+  button:focus {
+    outline: none;
+  }
+  
