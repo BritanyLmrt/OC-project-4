@@ -1,11 +1,8 @@
-@import '../utils/mixins';
-
 body {
   font-family: roboto,sans-serif;
-}
 
 .txt-header-footer {
-  @include button;
+  @include btn-txt;
   color: $grey;
 }
 
@@ -15,4 +12,9 @@ body {
 
 .txt-standard {
   @include paragraph;
+}
+
+.txt-card {
+@include btn-txt;
+}
 }

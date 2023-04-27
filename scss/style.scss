@@ -5,7 +5,7 @@
 // Import des fichiers de base
 @import './base/reset';
 @import './base/base';
-@import './base/typography'; //@use ou @import (paraît que import est obsoléte)
+@import './base/typography';
 
 // Import des fichiers de components
 @import './components/icons';
@@ -17,8 +17,3 @@
 
 // Import des fichiers de pages 
 @import './pages/index';
-
-// Import des fichiers de utils
-@import './utils/variables';
-@import './utils/mixins';
-

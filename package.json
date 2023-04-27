@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood-projet-4",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BritanyLmrt/OC-project-4.git"
+  },
+  "author": "BritanyLmrt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BritanyLmrt/OC-project-4/issues"
+  },
+  "homepage": "https://github.com/BritanyLmrt/OC-project-4#readme"
+}

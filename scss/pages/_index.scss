@@ -1,26 +1,29 @@
+// Section localisation
 .loc {
-
     display: flex;
     background-color: #EAEAEA;
     justify-content: center;
     padding-top: 15.5px;
     padding-bottom: 15.5px;
 
-
-    .loc__contnt--pos {
+    &__contnt--pos {
         display: flex;
         align-items: center;
         gap: 17px;
     }
 }
+
+// Section Intro
+
 .intro-section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 27px;
     background-color: $grey-light;
 
-    &__hdline--pos  {
+    &__hdline--pos {
         display: flex;
         flex-direction: column;
         padding-top: 39.5px;
@@ -33,6 +36,25 @@
     }
 }
 
-.fonctioning-section {
+// Section fonctionnement 
+
+.functioning-section {
+    width: 100%;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 20px 68px 20px;
+    gap: 26px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+
+        &--items-pos {
+            display: flex;
+        }
+    }
 }
