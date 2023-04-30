@@ -43,18 +43,35 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 28px 20px 68px 20px;
+    padding: 48px 20px 68px 20px;
     gap: 26px;
 
     &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 24px;
+        gap: 25px;
 
 
         &--items-pos {
             display: flex;
+            align-items: center;
+            gap:23px;
         }
+    }
+}
+
+.restaurant {
+    width: 100%;
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    gap:28px;
+    padding: 54px 18px 66px 17px;
+
+    &__card-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
     }
 }

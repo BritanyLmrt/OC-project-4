@@ -1,5 +1,6 @@
 .intro-section__btn--purple { 
         @include btn-purple;
         padding: 13px 18.75px;
+        text-decoration: none;
     }
 

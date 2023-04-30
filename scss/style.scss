@@ -8,12 +8,13 @@
 @import './base/typography';
 
 // Import des fichiers de components
-@import './components/icons';
+@import './components/icons-index';
 @import './components/cards';
 @import './components/buttons';
 
 // Import des fichiers de layout
 @import './layout/header';
+@import './layout/footer';
 
 // Import des fichiers de pages 
 @import './pages/index';

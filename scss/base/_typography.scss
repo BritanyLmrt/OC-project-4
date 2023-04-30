@@ -6,15 +6,28 @@ body {
   color: $grey;
 }
 
-.txt-section-title { 
+h2 { 
   @include section-title;
 }
 
-.txt-standard {
+p {
   @include paragraph;
+}
+
+.restaurant h3 {
+  @include subtitle-card;
 }
 
 .txt-card {
 @include btn-txt;
 }
+
+footer a  {
+  @include footer-txt-1;
+}
+
+.footer--txt {
+  @include footer-txt-2;
+}
+
 }
