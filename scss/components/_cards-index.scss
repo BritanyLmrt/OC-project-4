@@ -1,0 +1,69 @@
+@import '/scss/utils/mixins';
+
+//Section fonctionnement
+.functioning-section .card {
+    width: 322.49px;
+    height: 72.38px;
+    background-color: $grey-light;
+    border-radius: 20px;
+    box-shadow: $shadow2;
+}
+
+//Section restaurant
+.restaurant__card {
+    background-color: white;
+    width: 95%;
+    height: 251px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: $shadow2;
+
+    @include large-screen {
+        width: 490px;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        @include large-screen {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    
+    &-img {
+        z-index: 0;
+        width: 100%;
+        height: 231px;
+        position: absolute;
+        bottom: 80px;
+    }
+
+    &--badge-box {
+        display: flex;
+        flex-direction: row-reverse;
+        z-index: 1;
+        position: relative;    
+        top: 10px;
+
+    }
+    &-content {
+        display: flex;
+        width: 100%;
+        height: 77px;
+        padding: 5px 13px 0 13px;
+        gap: 5px;
+        margin-top: 150px;
+
+        
+        &--like-container {
+            width: 26px;
+            height: 26px;
+            position: relative;
+        }
+
+
+    }}

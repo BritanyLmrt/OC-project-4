@@ -1,0 +1,20 @@
+
+.menu__title-content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @include large-screen {
+        gap: 24px;
+    }
+
+    .menu__title--pos-txt {
+        text-align: center;
+    }
+
+}
+.btn-command {
+    height: 50px;
+    text-align: center ;
+}

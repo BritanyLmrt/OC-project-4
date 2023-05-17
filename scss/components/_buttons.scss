@@ -1,6 +1,37 @@
-.intro-section__btn--purple { 
-        @include btn-purple;
-        padding: 13px 18.75px;
-        text-decoration: none;
-    }
+.btn-purple {
+  @include btn-purple;
+  padding: 13px 18.75px;
+  text-decoration: none;
+}
 
+.checked {
+  width: 59px;
+  height: 70px;
+  background: $blue;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 12px;
+
+  &-icn {
+    font-size: 20px;
+    color: white;
+  }
+}
+
+.like-icn,
+.like-icn-gradient {
+  font-size: 26px;
+  position: absolute;
+  top: 185px;
+  right: 60px;
+}
+
+.like-icn-gradient {
+  background-image: $purple-gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

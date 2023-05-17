@@ -1,33 +1,62 @@
+//Général
 body {
-  font-family: roboto,sans-serif;
+  font-family: roboto, sans-serif;
 
-.txt-header-footer {
-  @include btn-txt;
-  color: $grey;
+  .txt-header-footer {
+    @include btn-txt;
+    color: $grey;
+  }
+
+  h2 { 
+    @include section-title;
+  }
+
+  p {
+    @include paragraph;
+  }
+
+  .restaurant h3 {
+    @include subtitle-card;
+  }
+
+  .txt-card {
+    @include btn-txt;
+  }
+
+  footer a {
+    @include btn-txt;
+    color: white;
+  }
+
+  .footer--txt {
+    @include btn-txt;
+    color: white;
+    font-weight: 400;
+  }
 }
 
-h2 { 
-  @include section-title;
+//Page Menu
+.menu__title--pos-txt {
+  @include menu-title;
 }
 
-p {
-  @include paragraph;
+.menu__subtitle {
+  @include menu-subtitle;
+}
+.card__menu-items p {
+  @include paragraph-card;
 }
 
-.restaurant h3 {
-  @include subtitle-card;
+.price-txt {
+  @include paragraph-card;
+  font-weight: 700;
 }
-
-.txt-card {
-@include btn-txt;
+.badge-icn,.badge-icn-false {
+  @include badge;
+  color: $green;
 }
+//Soulignement bleu sous-titre menu
 
-footer a  {
-  @include footer-txt-1;
-}
-
-.footer--txt {
-  @include footer-txt-2;
-}
-
+.blue-bar {
+  border-bottom: $blue solid 3px;
 }

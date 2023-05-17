@@ -8,9 +8,12 @@
 @import './base/typography';
 
 // Import des fichiers de components
-@import './components/icons-index';
-@import './components/cards';
+@import './components/icons';
+@import './components/cards-index';
+@import './components/cards-pages';
 @import './components/buttons';
+@import './components/images';
+@import './components/animations';
 
 // Import des fichiers de layout
 @import './layout/header';
@@ -18,3 +21,4 @@
 
 // Import des fichiers de pages 
 @import './pages/index';
+@import './pages/pages';

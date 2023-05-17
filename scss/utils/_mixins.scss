@@ -1,60 +1,101 @@
-//Mixins Boutons
+@mixin desktop-row {
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+@mixin large-screen {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-padding {
+  @media screen and (min-width: 1024px) {
+    padding-left: 180px;
+  }
+}
+
+// Mixins Boutons
 @mixin btn-purple {
   background: $purple-gradient;
   color: white;
   box-shadow: $shadow;
   border-radius: 25px;
-  border:none;
+  border: none;
 }
-// Mixins de taille de police
+
+// Mixins police
+@mixin menu-title {
+  font-family: Shrikhand;
+  font-size: 1.75rem; // 28px
+  line-height: 2.5rem; // 40px
+}
+
+@mixin menu-subtitle {
+  font-size: 1rem; // 16px
+  font-weight: 300;
+  line-height: 1.19rem; // 19px (approximatif)
+}
+
 @mixin btn-txt {
-  font-size: 1rem;
-  line-height: 1.18rem;
+  font-size: 1rem; // 16px
+  line-height: 1.19rem; // 19px (approximatif)
   font-weight: 500;
 }
 
-@mixin footer-txt-1 {
-  font-size: 1rem; 
-  line-height: 1.18rem; 
-  font-weight: 500;
-  color: white;
-}
-
-@mixin footer-txt-2 {
-  font-size: 1rem; 
-  line-height: 1.18rem; 
-  font-weight: 400;
+@mixin footer-txt-color {
   color: white;
 }
 
 @mixin paragraph-card-restaurant {
-  font-size: 1.06rem;
-  line-height: 1.25rem;
+  font-size: 1.06rem; // 17px
+  line-height: 1.25rem; // 20px
   font-weight: 300;
   color: $grey;
 }
+
 @mixin txt-icn {
-font-weight: 500;
-font-size: 0.94rem;
-line-height: 1.06rem;
-color: white;
+  font-weight: 500;
+  font-size: 0.94rem; // 15px
+  line-height: 1.06rem; // 17px
+  color: white;
 }
 
 @mixin paragraph {
-  font-size: 1.12rem;
-  line-height: 1.31rem;
+  font-size: 1.12rem; //18px
+  line-height: 1.31rem; // 21px
   font-weight: 300;
+  color: $grey;
+}
+
+@mixin paragraph-card {
+  font-size: 0.94rem; // 15px
+  font-weight: 300;
+  line-height: 1.12rem; // 18px
   color: $grey;
 }
 
 @mixin subtitle-card {
-  font-size: 1.12rem;
-  line-height: 1.31rem;
+  font-size: 1.12rem; // 22px
+  line-height: 1.31rem; // 21px
   font-weight: 700;
 }
 
+@mixin subtitle-card-page {
+  font-size: 1rem; // 16px
+  font-weight: 500;
+  line-height: 1.319rem; // 21px (approximatif)
+}
+
 @mixin section-title {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: 1.5rem; // 24px
+  line-height: 1.75rem; // 28px
   font-weight: 700;
+}
+
+@mixin badge {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
 }
