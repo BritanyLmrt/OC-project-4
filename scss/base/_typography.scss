@@ -36,21 +36,28 @@ body {
 }
 
 //Page Menu
-.menu__title--pos-txt {
+.menu {
+  h3 {
+    @include subtitle-card-page;
+  }
+  p {
+    @include paragraph-card;
+  }
+  .price-txt {
+    @include paragraph-card;
+    font-weight: 700;
+  }
+}
+.title-txt {
   @include menu-title;
+  text-align: center
 }
 
-.menu__subtitle {
+.menu-subtitle-txt {
   @include menu-subtitle;
 }
-.card__menu-items p {
-  @include paragraph-card;
-}
 
-.price-txt {
-  @include paragraph-card;
-  font-weight: 700;
-}
+
 .badge-icn,.badge-icn-false {
   @include badge;
   color: $green;

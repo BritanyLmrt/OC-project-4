@@ -1,57 +1,27 @@
+.card {
 
-.card__menu {
-    width: 100%;
-    background-color: $background;
-    border-radius: 40px 40px 0 0;
-    margin-top: 65px;
-    position: relative;
-    bottom: 100px;
-    padding: 32px 13px 30px 13px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    &__menu {
+        width: 100%;
+        background-color: $background-grey;
+        border-radius: 40px 40px 0 0;
 
-    @include large-screen {
-        align-items: center;
-        width: 75%;
-        margin: 50px 193px;
-        padding: 51px 210px;
-    }
 
-    &-type {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-
-    }
-
-    &-items-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
         @include large-screen {
             width: 634px;
         }
     }
 
-    &-items {
-        width:100%;
+    &__item {
+        width: 100%;
         height: 69px;
         background-color: white;
         border-radius: 15px;
-        padding: 12px 0;
         box-shadow: $shadow2;
-        display: flex;
-        align-items: space-around;  
-        overflow: hidden;
-        
-        &--price-pos {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: nowrap;
-            position: relative;
-            left: 44px;
-        }
     }
+}
+.items-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 12px;
 }

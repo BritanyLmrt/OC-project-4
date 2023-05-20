@@ -1,3 +1,29 @@
+.like__btn {
+    &--empty {
+        font-size: 26px;
+    }
+
+    &--gradient {
+        font-size: 26px;
+        background-image: $purple-gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+    }
+}
+
+.checked {
+    width: 59px;
+    height: 70px;
+    background: $blue;
+    border-radius: 0px 15px 15px 0px;
+
+    &__icn {
+        font-size: 20px;
+        color: white;
+    }
+}
 
 //header
 .fa-arrow-left {
@@ -37,7 +63,8 @@ span.num-icn {
 }
 
 // Section restaurants
-.badge-icn, .badge-icn-false {
+.badge-icn,
+.badge-icn-false {
     @include badge;
 
     height: 29px;
@@ -51,6 +78,7 @@ span.num-icn {
     z-index: 2;
     margin-right: 15px;
 }
+
 .badge-icn-false {
     opacity: 0;
 }
