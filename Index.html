@@ -13,12 +13,17 @@
 </head>
 
 <body>
+    <div class="loader">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+    </div>
     <header class="header">
         <div class="header__logo">
             <img src="assets/images/logo/ohmyfood@2x.svg" alt="Logo d'en-tête de Ohmyfood">
         </div>
     </header>
-    <main>
+    <main class="restaurant-main">
         <section class="usr-loc loc">
             <!-- user-location servira la mise en place de la localisation de l'utilisateur-->
             <div class="loc__contnt--pos">
@@ -34,8 +39,8 @@
                     par nos soins.</p>
             </div>
             <div class="intro-section__btn--pos">
-                <a class="intro-section__btn--purple" href="#restaurant">Explorer nos restaurants</a>
-            </div> <!--ce bouton doit-il être relier à la section Restaurant ?-->
+                <a class="btn-purple" href="#restaurant">Explorer nos restaurants</a>
+            </div>
         </section>
         <section class="functioning-section">
             <h2>Fonctionnement</h2>
@@ -60,53 +65,91 @@
             <h2>Restaurants</h2>
             <div class="restaurant__card-container">
                 <article class="restaurant__card">
-                    <img class="restaurant__card-img"
-                        src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="Assiette garnie de met sur une table de restaurant">
-                    <div class="restaurant__card-content">
-                        <div class="restaurant__card-content--pos-like">
-                            <h3>La palette du goût</h3>
-                            <i class="like-icn fa-sharp fa-solid fa-location-dot"></i>
+                    <a href="./restaurants/page-1.html">
+                        <img class="restaurant__card-img"
+                            src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="Assiette garnie de met sur une table de restaurant">
+                    </a>
+                    <div class="restaurant__card--new-pos">
+                        <div class="restaurant__card--badge-box">
+                            <div class="badge-icn">Nouveau</div>
                         </div>
-                        <p>Ménilmontant</p>
+                        <div class="restaurant__card-content">
+                            <div class="restaurant__card-content--txt">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="like__btn restaurant__card--like-container">
+                                <i class="like__btn--empty far fa-heart"></i>
+                                <i class="like__btn--gradient fa-solid fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
                 </article>
                 <article class="restaurant__card">
-                    <img class="restaurant__card-img" src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                        alt="Assiette garnie de met sur une table de restaurant">
-                    <div class="restaurant__card-content">
-                        <div class="restaurant__card-content--pos-like">
-                            <h3>La note enchantée</h3>
-                            <i class="like-icn fa-sharp fa-solid fa-location-dot"></i>
+                    <a href="/restaurants/page-2.html">
+                        <img class="restaurant__card-img" src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt="Assiette garnie de met sur une table de restaurant">
+                    </a>
+                    <div class="restaurant__card--new-pos">
+                        <div class="restaurant__card--badge-box">
+                            <div class="badge-icn">Nouveau</div>
                         </div>
-                        <p>Charonne</p>
-                    </div>
-                    <div class="restaurant__card-like">
-                        <i></i>
-                    </div>
-                </article>
-                <article class="restaurant__card">
-                    <img class="restaurant__card-img"
-                        src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                        alt="Assiette garnie de met sur une table de restaurant">
-                    <div class="restaurant__card-content">
-                        <div class="restaurant__card-content--pos-like">
-                            <h3>À la française</h3>
-                            <i class="like-icn fa-sharp fa-solid fa-location-dot"></i>
+                        <div class="restaurant__card-content">
+                            <div class="restaurant__card-content--txt">
+                                <h3>La note enchantée </h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="like__btn restaurant__card--like-container">
+                                <i class="like__btn--empty far fa-heart"></i>
+                                <i class="like__btn--gradient fa-solid fa-heart"></i>
+                            </div>
                         </div>
-                        <p>Cité Rouge</p>
+
                     </div>
                 </article>
                 <article class="restaurant__card">
-                    <img class="restaurant__card-img"
-                        src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt="Assiette garnie de met sur une table de restaurant">
-                    <div class="restaurant__card-content">
-                        <div class="restaurant__card-content--pos-like">
-                            <h3>Le délice des sens</h3>
-                            <i class="like-icn fa-sharp fa-solid fa-location-dot"></i>
+                    <a href="/restaurants/page-3.html">
+                        <img class="restaurant__card-img"
+                            src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="Assiette garnie de met sur une table de restaurant">
+                    </a>
+                    <div class="restaurant__card--new-pos">
+                        <div class="restaurant__card--badge-box">
+                            <div class="badge-icn-false">Nouveau</div>
                         </div>
-                        <p>Folie-Méricourt</p>
+                        <div class="restaurant__card-content">
+                            <div class="restaurant__card-content--txt">
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="like__btn restaurant__card--like-container">
+                                <i class="like__btn--empty far fa-heart"></i>
+                                <i class="like__btn--gradient fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant__card">
+                    <a href="./restaurants/page-4.html">
+                        <img class="restaurant__card-img"
+                            src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="Assiette garnie de met sur une table de restaurant">
+                    </a>
+                    <div class="restaurant__card--new-pos">
+                        <div class="restaurant__card--badge-box">
+                            <div class="badge-icn-false">Nouveau</div>
+                        </div>
+                        <div class="restaurant__card-content">
+                            <div class="restaurant__card-content--txt">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="like__btn restaurant__card--like-container">
+                                <i class="like__btn--empty far fa-heart"></i>
+                                <i class="like__btn--gradient fa-solid fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -124,7 +167,7 @@
                 <a href="#">Devenir partenaire</a>
             </div>
             <a class="footer--txt" href="#">Mentions légales</a>
-            <a class="footer--txt" href="#">Contact</a>
+            <a class="footer--txt" href="mailto:exemple@example.com">Contact</a>
         </div>
     </footer>
 </body>

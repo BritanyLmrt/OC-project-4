@@ -20,89 +20,158 @@
         <nav class="header__return-btn--pos">
             <a href="/Index.html" aria-label="Page d'accueil"><i class="fas fa-arrow-left"></i></a>
         </nav>
-        <div class="header__logo--pos">
+        <div class="header__logo">
             <img src="/assets/images/logo/ohmyfood@2x.svg" alt="Logo d'en-tête de Ohmyfood">
         </div>
     </header>
-    <main>
+    <main class="main-menu">
         <section class="bg-img-2">
         </section>
-        <section class="card__menu">
-            <div class="menu__title-content">
-                <h1 class="menu__title--pos-txt">La note enchantée</h1>
-                <div class="like-container">
-                    <i class="like-icn far fa-heart"></i>
-                    <i class="like-icn-gradient fa-solid fa-heart"></i>
-                    </div>
+        <section class="card__menu menu">
+            <div class="menu__title">
+                <h1 class="title-txt">La note enchantée</h1>
+                <div class="menu__like-box like__btn">
+                    <i class="like__btn--empty menu__like-box--empty-pos far fa-heart"></i>
+                    <i class="like__btn--gradient menu__like-box--gradient-pos fa-solid fa-heart"></i>
+                </div>
             </div>
-            <section class="card__menu-type">
-                <h2 class="menu__subtitle"><span class="blue-bar">ENTR</span>ÉES</h2>
-                <div class="card__menu-items-container">
-                    <article class="card__menu-items">
-                        <h3>Ravioles de foie gras</h3>
-                        <p class="card__menu-items--price-pos">Accompagnées de leur crème à la truffe<span class="price-txt">25€</span>
-                        </p>
+            <section class="menu__type">
+                <h2 class="menu-subtitle-txt"><span class="blue-bar">ENTR</span>ÉES</h2>
+                <div class="items-box">
+                    <article class="card__item menu__item loader-1">
+                        <div class="menu__item--txt-box">
+                            <h3>Ravioles de foie gras</h3>
+                            <p>Accompagnées de leur crème à la truffe</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">25€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
                     </article>
-                    <article class="card__menu-items">
-                        <h3>Caviar osciètre</h3>
-                        <p class="card__menu-items--price-pos">Sur blini à la farine de blé noir<span
-                                class="price-txt">35€</span></p>
+                    <article class="card__item menu__item loader-2">
+                        <div class="menu__item--txt-box">
+                            <h3>Caviar osciètre</h3>
+                            <p>Sur blini à la farine de blé noir</p>
+                        </div>
+                        <div class="menu__item--price-box ">
+                            <p class="price-txt">35€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
                     </article>
-                    <article class="card__menu-items">
-                        <h3>Homard et espuma de potiron</h3>
-                        <p class="card__menu-items--price-pos">Marinés aux zestes d'orange<span class="price-txt">20€</span>
-                        </p>
+                    <article class="card__item menu__item loader-3">
+                        <div class="menu__item--txt-box">
+                            <h3>Homard et espuma de potiron</h3>
+                            <p>Marinés aux zestes d'orange</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">20€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
                     </article>
-                    <article class="card__menu-items">
-                        <h3>Foie gras de canard cuit entier</h3>
-                        <p class="card__menu-items--price-pos">Confiture de figue et pain toasté<span class="price-txt">35€</span>
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <section class="card__menu-type">
-                <h2 class="menu__subtitle"><span class="blue-bar">PLAT</span>S</h2>
-                <div class="card__menu-items-container">
-                    <article class="card__menu-items">
-                        <h3>Noix de coquilles Saint-Jacques</h3>
-                        <p class="card__menu-items--price-pos">Sur lit de purée de céleri-rave<span class="price-txt">40€</span>
-                        </p>
-                    </article>
-                    <article class="card__menu-items">
-                        <h3>Langoustine poêlée</h3>
-                        <p class="card__menu-items--price-pos">Purée de patate douce<span
-                                class="price-txt">35€</span>
-                        </p>
-                    </article>
-                    <article class="card__menu-items">
-                        <h3>Mijoté de queue de bœuf</h3>
-                        <p class="card__menu-items--price-pos">Et riz sauvage aux zestes de citron<span class="price-txt">45€</span>
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <section class="card__menu-type">
-                <h2 class="menu__subtitle"><span class="blue-bar">DESS</span>ERTS</h2>
-                <div class="card__menu-items-container">
-                    <article class="card__menu-items">
-                        <h3>Macaron noisette et chocolat</h3>
-                        <p class="card__menu-items--price-pos">Glace au caramel brun et sel de Guérande<span
-                                class="price-txt">18€</span></p>
-                    </article>
-                    <article class="card__menu-items">
-                        <h3>Baba au rhum revisité</h3>
-                        <p class="card__menu-items--price-pos">Avec son coulis de citron<span class="price-txt">22€</span></p>
-                    </article>
-                    <article class="card__menu-items">
-                        <h3>Tarte au citron meringuée</h3>
-                        <p class="card__menu-items--price-pos">Déstructurée<span class="price-txt">23€</span>
-                        </p>
+                    <article class="card__item menu__item loader-4">
+                        <div class="menu__item--txt-box">
+                            <h3>Foie gras de canard cuit entier</h3>
+                            <p>Confiture de figue et pain toasté</p>
+                        </div>
+                        <div class="menu__item--price-box  ">
+                            <p class="price-txt">35€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
                     </article>
                 </div>
             </section>
-            <article class="btn-command">
-                <a class="intro-section__btn--purple">Commander</a>
-
+            <section class="menu__type">
+                <h2 class="menu-subtitle-txt"><span class="blue-bar">PLAT</span>S</h2>
+                <div class="items-box">
+                    <article class="card__item menu__item loader-5">
+                        <div class="menu__item--txt-box">
+                            <h3>Noix de coquilles Saint-Jacques</h3>
+                            <p>Sur lit de purée de céleri-rave</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">40€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="card__item menu__item loader-6">
+                        <div class="menu__item--txt-box">
+                            <h3>Langoustine poêlée</h3>
+                            <p>Purée de patate douce</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">35€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="card__item menu__item loader-7">
+                        <div class="menu__item--txt-box">
+                            <h3>Mijoté de queue de bœuf</h3>
+                            <p>Et riz sauvage aux zestes de citron</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">44€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="menu__type">
+                <h2 class="menu-subtitle-txt"><span class="blue-bar">DESS</span>ERTS</h2>
+                <div class="items-box">
+                    <article class="card__item menu__item loader-8">
+                        <div class="menu__item--txt-box">
+                            <h3>Macaron noisette et chocolat</h3>
+                            <p>Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">18€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="card__item menu__item loader-9">
+                        <div class="menu__item--txt-box">
+                            <h3>Baba au rhum revisité</h3>
+                            <p>Avec son coulis de citron</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">22€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="card__item menu__item loader-10">
+                        <div class="menu__item--txt-box">
+                            <h3>Tarte au citron meringuée</h3>
+                            <p>Déstructurée</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">23€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <article class="btn-box">
+                <a class="btn-purple">Commander</a>
             </article>
         </section>
     </main>
@@ -122,4 +191,5 @@
         </div>
     </footer>
 </body>
+
 </html>

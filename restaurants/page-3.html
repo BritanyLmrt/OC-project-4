@@ -24,78 +24,142 @@
             <img src="/assets/images/logo/ohmyfood@2x.svg" alt="Logo d'en-tête de Ohmyfood">
         </div>
     </header>
-    <main>
-        <section class="bg-img-3">
+    <main class="main-menu">        <section class="bg-img-3">
         </section>
-        <section class="card__menu">
-            <div class="menu__title-content">
-                <h1 class="menu__title--pos-txt">À la française</h1>
-                <i class="like-icn far fa-heart"></i>
+        <section class="card__menu menu">
+            <div class="menu__title">
+                <h1 class="title-txt">À la française</h1>
+                <div class="menu__like-box like__btn">
+                    <i class="like__btn--empty menu__like-box--empty-pos far fa-heart"></i>
+                    <i class="like__btn--gradient menu__like-box--gradient-pos fa-solid fa-heart"></i>
+                </div>
             </div>
-            <section class="card__menu-type">
-                <h2 class="menu__subtitle"><span class="blue-bar">ENTR</span>ÉES</h2>
-                <div class="card__menu-items-container">
-                    <article class="card__menu-items">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p class="card__menu-items--price-pos">Aux zestes d'orange<span class="price-txt">25€</span>
-                        </p>
+            <section class="menu__type">
+                <h2 class="menu-subtitle-txt"><span class="blue-bar">ENTR</span>ÉES</h2>
+                <div class="items-box">
+                    <article class="card__item menu__item loader-1">
+                        <div class="menu__item--txt-box">
+                            <h3>Tartare de poulpe acidulé</h3>
+                            <p>Aux zestes d'orange</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">25€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
                     </article>
+                    <article class="card__item menu__item loader-2">
+                        <div class="menu__item--txt-box">
+                            <h3>Velouté de légumes d'antan</h3>
+                            <p>Carotte, panais, topinambour</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">35€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
                     </article>
-                    <article class="card__menu-items">
-                        <h3>Velouté de légumes d'antan</h3>
-                        <p class="card__menu-items--price-pos">Carotte, panais, topinambour<span class="price-txt">35€</span>
-                        </p>
-                    </article>
-                    <article class="card__menu-items">
-                        <h3>Soupe à l'oignon</h3>
-                        <p class="card__menu-items--price-pos">Revisitée<span class="price-txt">20€</span>
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <section class="card__menu-type">
-                <h2 class="menu__subtitle"><span class="blue-bar">PLAT</span>S</h2>
-                <div class="card__menu-items-container">
-                    <article class="card__menu-items">
-                        <h3>Coquilles Saint-Jacques</h3>
-                        <p class="card__menu-items--price-pos">Accompagnées d'une purée de panais<span class="price-txt">40€</span>
-                        </p>
-                    </article>
-                    <article class="card__menu-items">
-                        <h3>Magret de canard</h3>
-                        <p class="card__menu-items--price-pos">Et parmentier de pommes de terre<span
-                                class="price-txt">35€</span>
-                        </p>
-                    </article>
-                    <article class="card__menu-items">
-                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                        <p class="card__menu-items--price-pos">Sur son lit de gnocchis aux légumes<span class="price-txt">44€</span>
-                        </p>
-                    </article>
-                </div>
-            </section>
-            <section class="card__menu-type">
-                <h2 class="menu__subtitle"><span class="blue-bar">DESS</span>ERTS</h2>
-                <div class="card__menu-items-container">
-                    <article class="card__menu-items">
-                        <h3>Pétales de violettes glacés</h3>
-                        <p class="card__menu-items--price-pos">Et purée de noisettes<span
-                                class="price-txt">18€</span></p>
-                    </article>
-                    <article class="card__menu-items">
-                        <h3>Fondant au chocolat</h3>
-                        <p class="card__menu-items--price-pos">Revisité<span class="price-txt">22€</span></p>
-                    </article>
-                    <article class="card__menu-items">
-                        <h3>Millefeuille croustillant</h3>
-                        <p class="card__menu-items--price-pos">Myrtilles et pâte d’amande<span class="price-txt">23€</span>
-                        </p>
+                    <article class="card__item menu__item loader-3">
+                        <div class="menu__item--txt-box">
+                            <h3>Soupe à l'oignon</h3>
+                            <p>Revisitée</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">20€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
                     </article>
                 </div>
             </section>
-            <article class="btn-command">
-                <a class="intro-section__btn--purple">Commander</a>
-
+            <section class="menu__type">
+                <h2 class="menu-subtitle-txt"><span class="blue-bar">PLAT</span>S</h2>
+                <div class="items-box">
+                    <article class="card__item menu__item loader-4">
+                        <div class="menu__item--txt-box">
+                            <h3>Coquilles Saint-Jacques</h3>
+                            <p>Accompagnées d'une purée de panais</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">40€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="card__item menu__item loader-5">
+                        <div class="menu__item--txt-box">
+                            <h3>Magret de canard</h3>
+                            <p>Et parmentier de pommes de terre</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">35€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="card__item menu__item loader-6">
+                        <div class="menu__item--txt-box">
+                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">44€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="menu__type">
+                <h2 class="menu-subtitle-txt"><span class="blue-bar">DESS</span>ERTS</h2>
+                <div class="items-box">
+                    <article class="card__item menu__item loader-7">
+                        <div class="menu__item--txt-box">
+                            <h3>Pétales de violettes glacés</h3>
+                            <p>Et purée de noisettes</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">18€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="card__item menu__item loader-8">
+                        <div class="menu__item--txt-box">
+                            <h3>Fondant au chocolat</h3>
+                            <p>Revisité</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">22€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                    <article class="card__item menu__item loader-9">
+                        <div class="menu__item--txt-box">
+                            <h3>Millefeuille croustillant</h3>
+                            <p>Myrtilles et pâte d’amande</p>
+                        </div>
+                        <div class="menu__item--price-box">
+                            <p class="price-txt">23€</p>
+                        </div>
+                        <div class="menu__item--checked-box checked checked-btn">
+                            <i class="checked__icn fa-solid fa-circle-check"></i>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section>
+                    <article class="btn-box">
+                <a class="btn-purple">Commander</a>
             </article>
         </section>
     </main>

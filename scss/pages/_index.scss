@@ -1,5 +1,4 @@
 @import '/scss/utils/mixins';
-
 // Section localisation
 .loc {
     display: flex;
@@ -80,9 +79,6 @@
     padding: 54px 18px 66px 17px;
 
     @include desktop-padding;
-
-
-
 
 
     &__card-container {

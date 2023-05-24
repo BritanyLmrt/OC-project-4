@@ -6,6 +6,7 @@
 @import './base/reset';
 @import './base/base';
 @import './base/typography';
+@import './base/loader-index';
 
 // Import des fichiers de components
 @import './components/icons';
@@ -13,11 +14,12 @@
 @import './components/cards-pages';
 @import './components/buttons';
 @import './components/images';
+@import './components/_loader-pages';
 
 // Import des fichiers de layout
 @import './layout/header';
 @import './layout/footer';
-
+@import './layout/main-pages';
 // Import des fichiers de pages 
 @import './pages/index';
 @import './pages/pages';

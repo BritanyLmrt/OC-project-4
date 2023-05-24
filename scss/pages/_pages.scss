@@ -1,104 +1,84 @@
-main {
-    width: 100%;
-    margin-bottom: -100px;
-}
-
+// Fichier principal
 .menu {
     width: 100%;
-    margin-top: 65px;
     position: relative;
     bottom: 100px;
     padding: 32px 13px 30px 13px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-
+    align-items: center;
+  
     @include large-screen {
-        align-items: center;
-        width: 75%;
-        margin: 50px 193px;
-        padding: 51px 210px;
+      align-items: center;
+      width: 75%;
+      margin: 50px 193px;
+      padding: 51px 210px;
     }
-
+  
     &__title {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: baseline;
-
-        @include large-screen {
-            gap: 24px;
-        }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+      gap: 24px;
+  
+      @include large-screen {
+        gap: 24px;
+      }
     }
-
+  
     &__like-box {
-        position: relative;
-
-        &--gradient-pos {
-            position: absolute;
-            right: 0;
-        }
+      position: relative;
+  
+      &--gradient-pos {
+        position: absolute;
+        right: 0;
+      }
     }
-
+  
     &__type {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+  
+      & h2 {
+        padding-bottom: 2px;
+      }
     }
-
+  
     &__item {
-        padding: 0 15px;
-        align-items: center;
+      padding: 0 15px;
+      align-items: center;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+  
+      &--txt-box {
         display: flex;
-        position: relative;
-
-        &:hover {
-            .menu__item--price-box {
-                transform: translateX(-60px);
-                /* Déplace le prix vers la gauche */
-            }
-            .menu__item--txt-box {
-                width: 60%;
-                p,h3 {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                }
-            }
-        }
-
-        &--txt-box {
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: column;
-            transition: overflow 0.3s ease;
-            /* Ajoute une transition pour une animation fluide */
-        }
-
-        &--price-box {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            margin-right: 10px;
-            transition: transform 0.3s ease;
-            /* Ajoute une transition pour une animation fluide */
-        }
-        &--checked-box {
-            display: none;
-            align-items: center;
-            justify-content: center;
-            margin-left: 5px;
-            position: absolute;
-            right: 0;
-            .menu__item:hover & {
-                display: flex;
-            }
-        }
-
-        .btn-box {
-            height: 50px;
-            text-align: center;
-        }
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+  
+      &--price-box {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 10px;
+      }
+  
+      &--checked-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -120px;
+      }
     }
-}
+  
+    .btn-box {
+      height: 50px;
+      text-align: center;
+    }
+  }

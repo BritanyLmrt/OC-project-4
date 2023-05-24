@@ -4,6 +4,8 @@
   @include btn-purple;
   padding: 13px 18.75px;
   text-decoration: none;
+  position:relative;
+  z-index: 1;
 
   &:hover {
     box-shadow: $shadow1;
@@ -14,6 +16,8 @@
 
 //******************* Bouton "J'aime" *********************************************
 .like__btn {
+  position: relative;
+  z-index: 1;
 
   &--empty {
     transition: opacity 100ms linear;
@@ -37,4 +41,61 @@
 
 
 //******************* Bouton "coche" *********************************************
+// Animations and transitions
+.menu__item {
+  &--price-box {
+    transition: transform 0.3s ease;
+  }
+
+  &--txt-box {
+    transition: overflow 0.3s ease;
+  }
+
+  &--checked-box {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    .menu__item--price-box {
+      z-index: 11;
+      transform: translateX(-60px);
+    }
+
+    .menu__item--txt-box {
+      width: 60%;
+      p,
+      h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .menu__item--checked-box {
+      transform: translateX(-120px);
+    }
+  }
+//Revient à l'état initial de maniére naturelle et cohérente (inverse de la transition de survol):
+  &:not(:hover) {
+    .menu__item--price-box {
+      transform: translateX(0);
+    }
+
+    .menu__item--txt-box {
+      width: 100%;
+      p,
+      h3 {
+        overflow: visible;
+        text-overflow: initial;
+        white-space: normal;
+      }
+    }
+
+    .menu__item--checked-box {
+      transform: translateX(0);
+    }
+  }
+}
+
+
 
