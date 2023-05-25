@@ -391,12 +391,12 @@ span.num-icn {
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 1024px) {
   .restaurant__card {
     width: 490px;
+    margin-right: 45px;
+    margin-bottom: 20px;
   }
 }
 .restaurant__card-container {
@@ -415,9 +415,6 @@ span.num-icn {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 .restaurant__card-img {
@@ -953,8 +950,11 @@ span.num-icn {
           flex-direction: column;
   gap: 28px;
   padding: 54px 18px 66px 17px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
   .restaurant {
     padding-left: 180px;
   }
@@ -964,22 +964,37 @@ span.num-icn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.restaurant__card-container .card__items-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 28px;
 }
 @media screen and (min-width: 1024px) {
-  .restaurant__card-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .restaurant__card-container {
+  .restaurant__card-container .card__items-restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 

@@ -17,10 +17,11 @@
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    box-shadow: $shadow2;
 
     @include large-screen {
         width: 490px;
+        margin-right: 45px;
+        margin-bottom: 20px;
     }
 
     &-container {
@@ -30,7 +31,6 @@
 
         @include large-screen {
             flex-direction: row;
-            align-items: center;
         }
     }
 
