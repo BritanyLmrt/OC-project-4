@@ -20,5 +20,8 @@
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.allowRegex": true,
   "liveSassCompile.settings.useBrowserslist": true,
-  "liveSassCompile.settings.watch": ["./scss/**/*.scss"]
+  "liveSassCompile.settings.watch": [
+    "./scss/**/*.scss"
+  ],
+  "livePreview.defaultPreviewPath": "/Index.html"
 }
