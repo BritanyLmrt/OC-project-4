@@ -1,6 +1,6 @@
 ***********************************Ohmyfood-projet-4
 
-Ohmyfood-projet-4 est un projet de site web en mobile-firt (donc axé principal sur l'utilisation mobile), de commande de repas en ligne, basé sur l'architecture 5-1 pour l'organisation des fichiers SCSS. Il met en avant l'utilisation de Sass pour faciliter le développement des styles, ainsi que différentes fonctionnalités techniques telles que les animations et le positionnement BEM dans les pages des restaurants.
+Ohmyfood-projet-4 est un projet de site web en mobile-first (donc axé principalement sur l'utilisation mobile), de commande de repas en ligne, basé sur l'architecture 5-1 pour l'organisation des fichiers SCSS. Il met en avant l'utilisation de Sass pour faciliter le développement des styles, ainsi que différentes fonctionnalités techniques telles que les animations et le positionnement BEM dans les pages des restaurants.
 
 ***********************************Organisation du projet
 
